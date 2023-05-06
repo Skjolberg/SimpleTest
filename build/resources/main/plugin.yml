@@ -1,14 +1,16 @@
-name: SimpleDropInventory
-main: net.shibacraft.simpledropinventory.SimpleDropInventory
+name: SimpleTest
+main: net.shibacraft.simpletest.SimpleTest
 version: '0.0.9-SNAPSHOT'
 author: SKJOLBERG
 api-version: 1.13
+softdepend:
+  - SimplePlugin
 permissions:
-  sdi.admin:
+  st.admin:
     description: Allows all admin permissions
     default: op
     children:
       - sdi.use
-  sdi.use:
+  st.use:
     default: false
     description: Allows you to use the command to drop items to the inventory
